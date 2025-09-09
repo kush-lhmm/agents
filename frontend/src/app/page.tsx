@@ -6,6 +6,13 @@ import { motion } from 'framer-motion';
 const Home = () => {
 const agents = [
   {
+    emoji: '🏡',
+    title: 'Villa Bot',
+    description: 'Find and locate beautiful hotels and villas with detailed information and recommendations',
+    href: '/villa',
+    buttonText: 'Find →'
+  },
+  {
     emoji: '📦',
     title: 'Tata Sampann Product Assistant',
     description: 'Get product details and recommendations',

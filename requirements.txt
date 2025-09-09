@@ -22,3 +22,4 @@ chromadb
 rank-bm25
 numpy
 langchain-text-splitters
+pandas
