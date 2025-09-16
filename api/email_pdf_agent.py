@@ -196,13 +196,13 @@ def summarize_pages_with_openai(pages: list[str], filename: str) -> str:
         "Be concise and executive-ready."
     )
     user = (
-        f"Document: {filename}\n"
-        "Create an executive summary (120–180 words), then:\n"
-        "• 5–8 key points with page cites\n"
-        "• 3 risks/assumptions with page cites\n"
-        "• 3 concrete action items\n\n"
-        "Text follows:\n" + doc_text
-    )
+    f"Document: {filename}\n"
+    "Write a short executive summary (≤150 words). Then:\n"
+    "• 3–5 key points (with page cites)\n"
+    "• 2 risks/assumptions (with page cites)\n"
+    "• 2 action items\n\n"
+    "Text:\n" + doc_text
+)
 
     resp = _openai.chat.completions.create(
         model=OPENAI_MODEL,
